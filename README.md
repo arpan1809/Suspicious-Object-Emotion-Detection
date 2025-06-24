@@ -1,5 +1,5 @@
 # Suspicious-Object-Emotion-Detection
-# 🔰 DRDO Surveillance System  
+# 🔰  Surveillance System  
 > Real-Time AI-based Weapon Detection & Emotion Recognition for Security Monitoring  
 > Built with YOLOv8, DeepFace, OpenCV, and PyTorch  
 
@@ -53,17 +53,11 @@ source venv/bin/activate
 🧠 Step 4: Add YOLOv8 Weapon Detection Model
 Download or train a best.pt model to detect weapons (via Roboflow or GitHub).
 
-Place best.pt in the root folder like this:
-
-text
-drdo-surveillance/  
-├── best.pt  
-├── drdo_surveillance.py
 
 
 ▶️ Step 5: Run the Surveillance System
 bash
-python drdo_surveillance.py  
+python app.py  
 Ensure your webcam is connected.
 Press q to exit the stream.
 
