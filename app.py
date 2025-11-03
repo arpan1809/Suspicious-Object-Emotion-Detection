@@ -5,7 +5,7 @@ import torch
 
 weapon_model = YOLO('yolov5s.pt')  
 
-# Initialize webcam
+
 cap = cv2.VideoCapture(0)
 
 print("[INFO] Starting surveillance...")
@@ -49,5 +49,6 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
