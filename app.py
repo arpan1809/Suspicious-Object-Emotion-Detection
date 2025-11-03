@@ -3,7 +3,6 @@ from deepface import DeepFace
 from ultralytics import YOLO
 import torch
 
-# Load YOLOv8 model for weapon detection
 weapon_model = YOLO('yolov5s.pt')  
 
 # Initialize webcam
@@ -50,4 +49,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
