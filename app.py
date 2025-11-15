@@ -31,7 +31,7 @@ while True:
         cv2.putText(resized_frame, label, (x1, y1 - 10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
 
-    # Emotion Recognition (on face)
+
     try:
         analysis = DeepFace.analyze(resized_frame, actions=['emotion'], enforce_detection=False)
         if analysis:
@@ -49,6 +49,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
