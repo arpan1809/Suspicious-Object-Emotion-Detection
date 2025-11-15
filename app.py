@@ -26,7 +26,7 @@ while True:
         cls = int(box.cls[0])
         label = f"{weapon_model.names[cls]} {conf:.2f}"
 
-        # Draw bounding box
+        
         cv2.rectangle(resized_frame, (x1, y1), (x2, y2), (0, 0, 255), 2)
         cv2.putText(resized_frame, label, (x1, y1 - 10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
@@ -49,6 +49,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
