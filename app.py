@@ -18,7 +18,7 @@ while True:
 
     resized_frame = cv2.resize(frame, (640, 480))
 
-    # Weapon detection
+   
     results = weapon_model(resized_frame, verbose=False)[0]
     for box in results.boxes:
         x1, y1, x2, y2 = map(int, box.xyxy[0])
@@ -49,6 +49,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
