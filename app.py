@@ -15,7 +15,7 @@ while True:
     if not ret:
         break
 
-    # Resize for better speed
+
     resized_frame = cv2.resize(frame, (640, 480))
 
     # Weapon detection
@@ -49,6 +49,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
